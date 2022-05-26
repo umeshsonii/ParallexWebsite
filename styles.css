@@ -1,0 +1,149 @@
+*{
+    font-family:  'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+    overflow-x: hidden;
+    
+}
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    width: 100%;
+    z-index: 100;
+
+}
+
+header .logo{
+    text-decoration: none;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo p{
+    color: #2b1055;
+    background-color: #FFF;
+    width: 100%;
+    text-align: center;
+    font-size: 0.6rem;
+  
+}
+.logo h2{
+    font-size: 0.8rem;
+}
+
+header ul{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+header li{
+    list-style: none;
+    margin-left: 20px;
+   
+}
+header li a{
+    text-decoration: none;
+    color: #FFF;
+    padding: 6px 20px;
+}
+header li a:hover ,header li a.active {
+    background-color: #FFF;
+    color: #2b1055;
+    border-radius: 20px;
+}
+section{
+    padding: 200px;
+    position: relative;
+    width: 100%;
+    height: 114vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content: '';
+    height: 100px;
+    width: 100vw;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 100;
+    bottom: 0;
+    position: absolute;
+}
+section img{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+ 
+pointer-events:none;
+
+}
+section img#moon{
+    mix-blend-mode: screen;
+}
+section img#mountf{
+   z-index: 10;
+}
+
+#text{
+position: absolute;
+font-size: 7.4vw;
+color: #FFF;
+z-index: 9;
+white-space: nowrap;
+transform: translateY(-100px);
+text-shadow: 4px 4px 12px rgba(0, 0, 0 , 0.2);
+}
+
+#btn{
+
+    background-color: #FFF;
+    color: #2b1055;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 6px 20px;
+    font-size: 1.5vw;
+    z-index: 9;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0 , 0.2);
+}
+
+.sec{
+    padding: 100px;
+    background: #1c0522;
+    position: relative;
+    z-index: 10;
+}
+.sec h2{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+.sec p{
+    color: #FFF;
+    font-size: 1rem;
+
+}
+.sec a{
+    text-decoration:underline;
+    color: #FFF;
+}
