@@ -19,7 +19,7 @@ header{
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 100px;
+    padding: 30px 8vw;
     width: 100%;
     z-index: 100;
 
@@ -69,7 +69,7 @@ header li a:hover ,header li a.active {
     border-radius: 20px;
 }
 section{
-    padding: 200px;
+    padding: 100px;
     position: relative;
     width: 100%;
     height: 114vh;
@@ -122,13 +122,13 @@ text-shadow: 4px 4px 12px rgba(0, 0, 0 , 0.2);
     border-radius: 30px;
     text-decoration: none;
     padding: 6px 20px;
-    font-size: 1.5vw;
+    font-size: 1.3rem;
     z-index: 9;
     box-shadow: 4px 4px 12px rgba(0, 0, 0 , 0.2);
 }
 
 .sec{
-    padding: 100px;
+    padding: 8vw;
     background: #1c0522;
     position: relative;
     z-index: 10;
@@ -146,4 +146,21 @@ text-shadow: 4px 4px 12px rgba(0, 0, 0 , 0.2);
 .sec a{
     text-decoration:underline;
     color: #FFF;
+}
+header .burger{
+color: #FFF;    
+font-size: 2rem;
+display: none;
+}
+
+@media screen and (max-width:920px) {
+    header .burger{
+        display:inline;
+        }
+header ul{
+    display: none;
+
+}
+
+
 }
